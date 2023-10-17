@@ -11,12 +11,10 @@ namespace BulkyWeb.Controllers
         {
             
             _db = db;
-            Console.WriteLine("Any String " + db);
-            var x = 0;
+
         }
         public IActionResult Index(ApplicationDbContext db)
         {
-            var x = 1;
             List<Category> objCategoryList = _db.Categories.ToList();
             return View();
         }
