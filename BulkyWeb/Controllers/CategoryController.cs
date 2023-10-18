@@ -6,7 +6,7 @@ namespace BulkyWeb.Controllers
 {
     public class CategoryController : Controller
     {
-        public ApplicationDbContext _db;
+        private readonly ApplicationDbContext _db;
         public CategoryController(ApplicationDbContext db)
         {
             
